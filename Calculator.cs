@@ -18,7 +18,7 @@ namespace c_event
 
         public void Calculation(int x, int y)
         {
-            WriteLine($"Task {Task.CurrentId} starts addition after 3 seconds for " +x +" and " + y);
+            WriteLine($"Task {Task.CurrentId} starts addition after 3 second for " +x +" and " + y);
             Task.Delay(new Random().Next(3000)).Wait();
             Result = x + y;
 
